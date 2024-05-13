@@ -1,0 +1,41 @@
+/* body{
+    // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; 
+}
+} */
+
+
+.nav-title{
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+.primary{
+    color: #FD6E0A;
+}
+nav{
+    display: flex;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    
+}
+nav li{
+    margin-right: 50px;
+}
+.button-p{
+    background-color: #FD6E0A;
+    border-radius: 5px;
+}
