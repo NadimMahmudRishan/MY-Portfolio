@@ -1,25 +1,19 @@
-/* body{
-    // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
-
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100; 
+/* Shared iteams */
+.primary{
+    color: #fd6e0a;
 }
-} */
+main{
+    margin:0px auto;
+    max-width: 1140px;
+    align-items: center;
+    a
+}
 
-/* upper style */
+/* Header style */
 .nav-title{
     color: #181818;
     font-size: 45px;
     font-weight: 800;
-}
-.primary{
-    color: #FD6E0A;
 }
 nav{
     display: flex;
@@ -48,9 +42,42 @@ nav li{
 }
 .banner{
     display: flex;
-    padding: 30px 30px 30px 150px;
+    padding: 30px 30px 0px 150px;
     align-items: center;
+    justify-content: space-between;
 }
 .banner .profile-pic{
     height: 40vh;
+}
+.banner-greeting{
+    color: #474747;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+.banner-title{
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.banner-content{
+    max-width: 500px;
+}
+header{
+    background-image: url(/images/baground.png);
+    background-repeat: no-repeat;
+    /* background-position: bottom right; */
+}
+.about{
+    /* width: 50vw; */
+    margin-top: 100px;
+    border: 1px solid;
+    padding: 130px;
+    background-color: #fd6f0a2a;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
 }
