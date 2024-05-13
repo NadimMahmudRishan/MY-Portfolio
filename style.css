@@ -12,7 +12,7 @@
 }
 } */
 
-
+/* upper style */
 .nav-title{
     color: #181818;
     font-size: 45px;
@@ -23,10 +23,13 @@
 }
 nav{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 nav ul li a{
     text-decoration: none;
@@ -38,4 +41,16 @@ nav li{
 .button-p{
     background-color: #FD6E0A;
     border-radius: 5px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 35px;
+}
+.banner{
+    display: flex;
+    padding: 30px 30px 30px 150px;
+    align-items: center;
+}
+.banner .profile-pic{
+    height: 40vh;
 }
