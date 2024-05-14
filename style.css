@@ -7,7 +7,6 @@ main {
     margin: 0px auto;
     max-width: 1140px;
     align-items: center;
-    a
 }
 
 /* Header style */
@@ -123,4 +122,30 @@ header {
 }
 .skill *{
     text-align: center;
+}
+.resume-contaner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resume-colum-title{
+    color: #181818fa;
+
+}
+.resume-colum{
+    margin: 10px;
+}
+.resume-items h3 {
+    color: #181818b4;
+}
+.resume-title{
+    text-align: center;
+   font-size: 50px;
+}
+.resume-contaner .resume-colum h1{
+    font-size: 30px;
+}
+.download-cv {
+    margin-top: 50px;
+    text-align: center ;
 }
