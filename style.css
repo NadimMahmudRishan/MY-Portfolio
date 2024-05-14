@@ -3,7 +3,7 @@
     color: #fd6e0a;
 }
 
-main {
+main ,footer {
     margin: 0px auto;
     max-width: 1140px;
     align-items: center;
@@ -148,4 +148,25 @@ header {
 .download-cv {
     margin-top: 50px;
     text-align: center ;
+}
+
+/* footer style */
+footer{
+    margin-top: 20px;
+    display: flex;
+    background-color: #fd6f0a10;
+}
+.footer-colum{
+    max-width: 27.5vw;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+.message input[type="text"],.message input[type="email"],.message textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    border-radius: 5px;
+    border: 0;
+    width: 400px;
 }
