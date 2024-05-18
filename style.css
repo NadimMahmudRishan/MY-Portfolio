@@ -3,7 +3,13 @@
     color: #fd6e0a;
 }
 
-main ,footer {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main,
+footer {
     margin: 0px auto;
     max-width: 1140px;
     align-items: center;
@@ -12,8 +18,9 @@ main ,footer {
 /* Header style */
 .nav-title {
     color: #181818;
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: 800;
+    margin:2vh 7.8vw;
 }
 
 nav {
@@ -41,16 +48,17 @@ nav li {
     background-color: #FD6E0A;
     border-radius: 5px;
     border: 0px;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 700;
     padding: 15px 35px;
     margin-right: 10px;
     color: white;
+    margin-top: 2vh;
 }
 
 .banner {
     display: flex;
-    padding: 30px 30px 0px 150px;
+    padding: 30px 30px 0px 7.8vw;
     align-items: center;
     justify-content: space-between;
 }
@@ -80,16 +88,24 @@ nav li {
 header {
     background-image: url(/images/baground.png);
     background-repeat: no-repeat;
-    /* background-position: bottom right; */
 }
 
 /* about style */
 .about {
     margin-top: 100px;
     border: 1px solid;
-    padding: 130px;
+    padding: 10vw;
     background-color: #fd6f0a2a;
     text-align: center;
+}
+
+.section-title {
+    padding: 1vh;
+}
+
+.about-discription {
+    padding: 1vh;
+    text-align: justify;
 }
 
 .container {
@@ -106,69 +122,160 @@ header {
 /* Skill part style */
 .skill img {
     width: 50px;
-}   
+}
+
 .skill {
     display: inline-block;
     background-color: rgb(255, 255, 255);
     box-shadow: #dad5d5 5px 5px 10px;
     width: 12vw;
     padding: 20px;
+    text-align: center;
+
 }
-.skill-divition{
+
+.skill-divition {
     display: flex;
     justify-content: space-between;
 
 }
-.skill-logo{
+
+.skill-logo {
     text-align: center;
 }
-.skill *{
-    text-align: center;
-}
-.resume-contaner{
+
+.resume-contaner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.resume-colum-title{
-    color: #181818fa;
 
+.resume-colum-title {
+    color: #181818fa;
+    margin: 0.5vh 0px;
 }
-.resume-colum{
+
+.resume-colum {
     margin: 10px;
 }
+
 .resume-items h3 {
     color: #181818b4;
 }
-.resume-title{
+
+.resume-title {
     text-align: center;
-   font-size: 50px;
+    font-size: 50px;
 }
-.resume-contaner .resume-colum h1{
+
+.resume-contaner .resume-colum h1 {
     font-size: 30px;
 }
+
 .download-cv {
     margin-top: 50px;
-    text-align: center ;
+    text-align: center;
 }
 
 /* footer style */
-footer{
-    margin-top: 20px;
+footer {
     display: flex;
     background-color: #fd6f0a10;
+    margin: auto;
+    margin-top: 20px;
 }
-.footer-colum{
-    max-width: 27.5vw;
-    padding: 20px;
+
+.footer-colum {
+    max-width: 50vw;
+    padding: 5vh;
     align-items: center;
     text-align: center;
 }
-.message input[type="text"],.message input[type="email"],.message textarea{
+
+.footer-discription {
+    padding: 0.5vw;
+}
+
+.message input[type="text"],
+.message input[type="email"],
+.message textarea {
     display: block;
-    margin-bottom: 25px;
-    padding: 18px 35px;
+    margin-bottom: 5vh;
+    padding: 2vh 5vw;
     border-radius: 5px;
     border: 0;
-    width: 400px;
+    width: 30vw;
+}
+
+/* Smal device meadia queary */
+@media screen and (max-width:576px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .button-p {
+        margin: 2vw;
+    }
+
+    nav ul,
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-title {
+        padding: 5vw 0px;
+        font-size: 3em;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .skill-divition {
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .skill {
+        width: 80vw;
+        padding: 2vw;
+        margin: 5vw;
+    }
+
+    .resume-contaner {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    .message input[type="text"],
+    .message input[type="email"],
+    .message textarea {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+
+    }
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .banner .profile-pic{
+        height: 48vh;
+    }
 }
